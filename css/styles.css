@@ -1,19 +1,78 @@
 /*PALETA DE COLORES*/
-:root{
-    --fondoWrapper: #089e97;
+:root {
+  --fondo: #ffff;
+  --fondoWrapper: #325b59;
+  --fondoCarruselContainer: #089e97;
 }
 
 
 /*GLOBALES*/
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-.wrapper{
-    margin-left: 2.5%;
-    width: 95%;
-    border-radius: 5%;
-    background-color: var(--fondoWrapper);
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  color: white;
+  background: var(--fondo);
+
+}
+
+img {
+  max-width: 400px;
+  max-height: 100%;
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.wrapper {
+  background: var(--fondoWrapper);
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+  max-width: 960px; /* 2 */
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+}
+/* NAV */
+.logo{
+  width: 100%;
+  display: flex;
+  flex-direction: flex-start;
+}
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+ul{
+  width: 500px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+/* CARRUSEL */
+.carruselContainer {
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  width: 95%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5%;
+  background-color: var(--fondoCarruselContainer);
+}
+
+section {}
